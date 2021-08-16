@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>profile</title>
+    </head>
+    <style > 
+    header{
+        position:sticky;
+        background-color:rgb(32, 31, 31);
+        top:0 ;
+        padding: 20px;
+        text-align: center;
+        border-style: solid;
+        background-color: whitesmoke;
+        width: 97%;
+    }
+    
+        h1{
+       display: inline;
+   }
+    
+    logo{
+        position:absolute;
+        top: 4px;
+        left: 15px;
+    }
+    profile{
+        position: absolute;
+        top: 7px;
+        right:20px;
+    }
+    
+    
+    fieldset {
+        border-style:double;
+        border-color: black;
+       
+    }
+    fsetforprereg{
+          
+        text-align: center;  
+        
+        
+
+    }
+    ul{
+        list-style-position: inside;
+        display: table;
+        margin: 0 auto;
+
+    }
+
+    ol{
+        list-style-position: inside;
+        display: table;
+        margin:0 auto;
+    }
+    para{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+    .headone{
+        text-align: center;
+        
+    }
+    input{
+        text-align: center;
+       display: inline;
+       display:table;
+        margin: auto;
+    }
+    input[type=radio]{
+        text-align: unset;
+        display: unset;
+        margin: unset;
+    }
+ 
+    select{
+        text-align: center;
+        display:table;
+        margin:0 auto;
+
+    }
+    textarea{
+        display:table;
+        margin:0 auto;
+    }
+    .topnav{
+        text-align: center;
+        color: black;
+        
+    }
+ 
+    .topnav{
+                
+                background-color:white;
+                overflow:hidden;
+            }
+            .topnav a{
+                float: left;
+                color:black;
+                text-align: left;
+                padding: 14px 46px;
+                text-decoration: none;
+                font-size: 16px;
+
+            }
+            
+            .topnav a.active{
+                background-color: black;
+                color: white;
+            }
+body::-webkit-scrollbar{
+    display: none;
+}
+back{
+    text-align: center;
+    color:black;
+}
+.footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 97%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+input[type=submit]:hover{
+     color: darkblue;
+     font: large;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  
+}
+.back a:hover{
+    color: black;
+     font: large;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+    </style>
+    <body style="background-color:silver">
+        
+        <form>
+             
+        <header> 
+        
+            <nav> 
+            <div class="topnav">
+               <a href="hosp1.html"> <logo><img src="logo1.jpg" width="70px"> </logo></a>
+                &emsp;<a href="hosp1.html">HOME</a>
+                <a class="active"href="profile.html">PROFILE</a>
+                <a href="hospregis.html">REGISTER</a>
+                <a href="hospcontactus.html">CONTACT US</a>
+                <a href="#contact">HELP</a>
+                <a href="hosplogin.html">SIGN UP</a>
+            <profile style="margin: auto;"> 
+                <input  type="image" src="profile.png" alt="choose photo" width="70px">
+            </profile>
+            </header>
+            
+                    
+        </nav>
+        <fieldset>
+            </div>
+            <br><br>
+            
+            <div class="headone"> 
+            
+                <h1 style="color:#07062d"> Fill The Details </h1>
+            </div>
+            <br><br><br><br>
+        <para>FIRST NAME        </para>
+        <input type="text" name="fname" placeholder="full name"pattern="[A-Za-z]*" autofocus required><br><br>
+        <para>LAST NAME         </para>
+        <input type="text" name="lname"  placeholder="initials" pattern="[A-Za-z]*"required><br><br>
+        <para>AGE               </para>
+        <input type="number" name="age" min="5" max="80"  required><br><br>
+        
+        <para>D-O-B</para>
+        <input type="date" name="birthdate" value="2000-01-01"><br><br>
+        <para>CITY</para>
+        <input type="text" name="city" placeholder="current city"pattern="[a-zA-Z]*" required><br><br>
+        <para>DISTRICT</para>
+        <select name="state" required>
+            <option value="none" selected>none</option>
+            <option value="kerala">KERALA</option>
+            <option value="pondicherry">PONDICHERRY</option>
+            <option value="tamilnadu">TAMILNADU</option>
+        </select><br><br>
+        <para>ADDRESS </para>
+        <textarea name="address" rows="5" cols="30" required>
+
+        </textarea><br><br>
+        <para>PINCODE      </para>
+        <input type="text" name="pincode" placeholder="enter a valid one" pattern="[0-9]{6}" max="6" maxlength="6"required><br><br>
+        <para>MOBILE NO(10 digit with country code)  </para>
+        <input type="tel" name="phone" value="+91" pattern="+[0-9]{10}"maxlength="13" required><br><br>
+        <para>AADHAR NO</para>
+        <input type="text" name="aadharno" placeholder="0000-0000-0000"pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"required><br><br>
+        <para>EMAIL-ID</para>
+        <input type="email" name="email"placeholder="xyz@gmail.com" required><br><br>
+        <para>GENDER</para><BR>
+ <CENTER > 
+        <input type="radio" name="gender" value="MALE" checked>
+        MALE&emsp; 
+        <input type="radio" name="gender" value=FEMALE>
+       FEMALE &emsp;
+        <input type="radio" name="gender" value=OTHER>
+       OTHER 
+       
+</CENTER> 
+<BR><BR><BR>
+
+
+
+
+        <input type="submit" value="submit"> 
+        <br>
+       <p style="color: red;text-align: center;"> <i>  note:please double check before submit.</i></p><br><br><br>
+    </dic>
+<center> 
+    <div class="back"> 
+    <a href="hosp1.html"><back> back</back></a>
+</div>
+</center>   
+    
+    
+    
+    </fieldset>
+        </form>
+    </body>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>top pos fixed</title>
+    </head>
+    <style > 
+    .bgimg{
+        background-image:url("bgimage.jfif");
+       
+        
+    }
+    header{
+        position:sticky;
+        background-color:rgb(32, 31, 31);
+        top:0 ;
+        padding: 20px;
+        text-align: center;
+        border-style: solid;
+        background-color: whitesmoke;
+        width: 97%;
+    }
+   h1{
+       display: inline;
+   }
+    
+    logo{
+        position:absolute;
+        top:4px;
+        left: 15px;
+    }
+    reg{
+
+        top: 40px;
+        left:16px;
+    }
+    
+    profile{
+        position: absolute;
+        top:7px;
+        right:20px;
+    }
+    input{
+      float:center;
+    clear:left;
+    }
+    fieldset {
+        border-style:double;
+        border-color: black;
+    }
+    legend{
+            
+            padding:2px;
+            margin-left: 45%;
+        }
+    fsetforprereg{
+          
+        text-align: center;  
+        
+        
+
+    }
+    ul{
+        list-style-position: inside;
+        display: table;
+        margin: 0 auto;
+
+    }
+    ol{
+        list-style-position: inside;
+        display: table;
+        margin:0 auto;
+    }
+    para{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+    .headone{
+        text-align: center;
+        
+    }
+    .topnav{
+        text-align: center;
+        color: black;
+    }
+ 
+    .topnav{
+                
+                background-color:white;
+                overflow:hidden;
+            }
+            .topnav a{
+                float: left;
+                color:black;
+                text-align: left;
+                padding: 14px 46px;
+                text-decoration: none;
+                font-size: 16px;
+
+            }
+            
+            .topnav a.active{
+                background-color: black;
+                color: white;
+            }
+body::-webkit-scrollbar{
+    display: none;
+}
+.wrapper{
+    width: 200px;
+    padding: 20px;
+    height: 150px;
+    display: inline;
+}
+.footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 97%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+</style>
+    <body style="background-color:silver"><form>
+         
+        
+        <header> 
+        
+        <nav> 
+        <div class="topnav">
+           <a href="hosp1.html"> <logo><img src="logo1.jpg" width="70px"> </logo></a>
+            &emsp;<a href="hosp1.html">HOME</a>
+            <a href="profile.html">PROFILE</a>
+            <a class="active"href="lab0.html">REGISTER</a>
+            <a href="hospcontactus.html">CONTACT US</a>
+            <a href="#contact">HELP</a>
+            <a href="hosplogin.html">SIGN UP</a>
+        <profile style="margin: auto;"> 
+            <input  type="image" src="profile.png" alt="choose photo" width="70px">
+        </profile>
+        </header>
+        
+                
+    </nav>
+
+<fieldset>
+</div>
+    <br><br>
+    <div class="headone"> 
+    
+        <h1 style="color:#07062d)"> CHOOSE YOUR HOSPITAL!! </h1>
+    </div>
+    <br><br><br><br>
+    <div >
+
+<reg>
+    <img src="regnow1.png"width="100" ALIGN="left"height="140px"width="100%">
+</reg>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <para>FULL NAME     
+    </para>
+       &emsp;&emsp;&emsp; <input type="text" name="fullname" placeholder="e.g:pranesh v r" pattern="[A-Za-z]*" autofocus required>
+    <i style="color: red;font-size: 10pt;">&emsp;
+        note : &nbsp;full name with initials at last (dont include numbers)
+    </i><br><br><br><br>
+    <para>AGE               </para>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;  <input type="number" name="age" min="5" max="80"  required><br><br>
+    <br><br><para>CITY</para>
+    &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;  <input type="text" name="city" placeholder="current city" pattern="[a-zA-Z]*"  required>
+    <i style="color: red;font-size: 10pt;">&emsp;
+        note : &nbsp;your current city
+    </i><br><br><br><br>
+    <para>DISTRICT</para>
+    &emsp;&emsp;&emsp; &emsp; <input type="text" name="district" placeholder="current district" pattern="[a-zA-Z]*" required>
+    <i style="color: red;font-size: 10pt;">&emsp;
+        note : &nbsp;your current district
+    </i><br><br><br><br><br><br><br><br>
+    <fieldset> 
+        
+
+        <legend style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">HOSPITAL DETAILS</legend>
+        
+    <para style="position:absolute">CHOOSE HOSPITAL</para>
+    &emsp;&emsp;&emsp; &emsp;
+    &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;
+    <div class="wrapper">
+
+    <select name="hospital" onfocus='this.size=5' onblur='this.size=1;' onchange='this.size=1; this.blur();'required >
+        <option value="none" selected>choose</option>
+        <option value="gvt.hospital,arialur" >gvt.hospital,arialur</option>
+        <option value="gvt.hospital,bhavani">gvt.hospital,bhavani</option>
+        <option value="pgvt.hospital,cuddalore">gvt.hospital,cuddalore</option>
+        <option value="gvt.hospital,dindigul">gvt.hospital,dindigul</option>
+        <option value="gvt.hospital,erode">gvt.hospital,erode</option>
+        <option value="gvt.hospital,gobi">gvt.hospital,gobi</option>
+        <option value="gvt.hospital,hosur">gvt.hospital,hosur</option>
+        <option value="gvt.hospital,imbur">gvt.hospital,imbur</option>
+        <option value="gvt.hospital,jodambu">gvt.hospital,jodambur</option>
+        <option value="gvt.hospital,kodaikanal">gvt.hospital,kodaikanal</option>
+        <option value="gvt.hospital,lukyankotai">gvt.hospital,lukyankotai</option>
+        <option value="gvt.hospital,madurai">gvt.hospital,madurai</option>
+        <option value="gvt.hospital,natham">gvt.hospital,natham</option>
+        <option value="gvt.hospital,oddanchatram">gvt.hospital,oddanchatram</option>
+        <option value="gvt.hospital,perambalur">gvt.hospital,perambalur</option>
+        <option value="gvt.hospital,salem">gvt.hospital,salem</option>
+        <option value="gvt.hospital,tiruchy">gvt.hospital,tiruchy</option>
+        <option value="gvt.hospital,vanampaakam">gvt.hospital,vanampaakam</option>
+    </select><br><br><br><br>
+</div>
+<para style="position:absolute;">HOSPITAL LOCATION</para>
+&emsp;&emsp;&emsp; &emsp;
+&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;
+<div class="wrapper">
+    <select name="hospitallocation" onfocus='this.size=5' onblur='this.size=1;' onchange='this.size=1; this.blur();'required >
+        <option value="none" selected>choose</option>
+        <option value="arialur" >arialut</option>
+        <option value="bhavani">bhavani</option>
+        <option value="cuddalore">cuddalore</option>
+        <option value="dindigul">dindigul</option>
+        <option value="erode">erode</option>
+        <option value="gobi">,gobi</option>
+        <option value="hosur">,hosur</option>
+        <option value=",imbur">,imbur</option>
+        <option value="jodambu">jodambur</option>
+        <option value="kodaikanal">kodaikanal</option>
+        <option value="lukyankotai">lukyankotai</option>
+        <option value="madurai">madurai</option>
+        <option value="natham">natham</option>
+        <option value="oddanchatram">oddanchatram</option>
+        <option value="perambalur">perambalur</option>
+        <option value="salem">salem</option>
+        <option value="tiruchy">tiruchy</option>
+        <option value="vanampaakam">vanampaakam</option>
+    </select><br><br><br><br>
+
+
+
+
+</div>
+<para style="position:absolute;text-transform: uppercase;">suffering disease</para>
+    &emsp;&emsp;&emsp; &emsp;
+    &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;
+<input type="text" name="disease" placeholder="cold/cough" required><br><br><br><br>
+<para style="position:absolute;text-transform: uppercase;">visiting time</para>
+    &emsp;&emsp;&emsp; &emsp;
+    &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;
+<input type="time" name="time" min="09:00" max="19:00" value="09:00"  required><i style="color: red;font-size: 10pt;">&emsp;
+    note : &nbsp;select time between 9.00am-7.00pm ## if emergency contact us!!</i>
+</fieldset>
+   
+   
+   
+   
+   
+   
+    <br><br><br><br>
+    <para>PROFILE PHOTO </para>&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;<input type="file" name="profilepicture" required>
+   <i style="color: red;font-size: 10pt;"> 
+      <br><br>&emsp; &emsp;&emsp;note: upload your passport size photo in pdf format
+    </i>
+    <br><br><br>
+    <center> 
+    <input type="submit" value="Register"> <input type="reset" value="RESET" onclick="window.location.reload()">
+</center>
+<br>
+   <p style="color: red;text-align: center;"> <i>  note:please double check before submit.</i></p><br><br><br>
+<center> 
+<a href="hosp1.html"><back> back</back></a>
+</center>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</fieldset>
+</form>
+</body>
+</html>
